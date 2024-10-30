@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+}
+
+/*=============Home Page=================*/
+.main{
+  width: 100%;
+  background-image:url(Photos/background1.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 120vh;
+}
+.navbar{
+  width: 100%; 
+  height: 70px;
+  margin: auto;
+}
+.icon{
+  width: 30%; 
+  float: left;
+  height: 70px;
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 5px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px
+}
+.menu{
+  width: 70%;  
+  float: right;
+  height: 70px;
+}
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+  color:#181A3B;
+  text-decoration: underline;
+}
+.content{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  color: white;
+  position: absolute;
+  translate: (-50%, -50%);
+  text-align: center;
+}
+.content h1{
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 170px;
+  letter-spacing: 2px;
+}
+.content span{
+  color: #999dcc;
+  font-size: 65px;
+}
+
+
+
+
+/*===============Container===================*/
+.container{
+width: 100%;
+height: 100vh;
+background: linear-gradient( rgba(41, 42, 99, 0.8),rgba(56, 56, 114, 0.8));
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container-heading{
+width: 28%;
+height: 80vh;
+padding: 2%;
+margin: 2%;
+background: linear-gradient(to center, rgba(74, 67, 67, 0.267)15%,rgba(55, 50, 50, 0.363)25%);
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.container-heading h2{
+  text-align: center;
+
+}
+
+/*==============Workout and Nutrition Page==============*/
+.box{
+width: 28%;
+height: 80vh;
+border: 1px solid white;
+padding: 2%;
+margin: 2%;
+background: linear-gradient(to center, rgba(74, 67, 67, 0.267)15%,rgba(55, 50, 50, 0.363)25%);
+text-align: center;
+}
+.box img{
+margin: 2%;
+}
+img{
+  width: 65%;
+  height: 40%
+}
+h2, h3, h4, p{
+  color: white;
+  font-family: sans-serif;
+}
+.box h2, h3, h4, p{
+ margin: none;
+}
+
+/*============Photos page=============*/
+.box1{
+  width: 28%;
+  height: 60vh;
+  border: 1px solid white;
+  padding: 2%;
+  margin: 2%;
+  background: linear-gradient(to center, rgba(74, 67, 67, 0.267)15%,rgba(55, 50, 50, 0.363)25%);
+  text-align: center;
+  }
+  .box1 img{
+    margin: 4%;
+  }
+  .box1 h3,p{
+    margin: 4%;
+  }  
+
+
+
+/*==============Contact Page===============*/
+.form{
+  width: 28%;
+  height: 85%;
+  background: linear-gradient( rgba(41, 42, 99, 0.8),rgba(56, 56, 114, 0.8));
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  transform: translate(0%,5%);
+  border-radius: 3%;
+  padding: 4%;
+}
+.form h2{
+  width: 90%;
+  font-family: sans-serif;
+  text-align: center;
+  color: #30356c;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+.form input{
+  width: 98%;
+  height: 12%; 
+  background: transparent;
+  border-bottom: 2px solid #30356c;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+.form input:focus{
+  outline: none;
+}
+::placeholder{
+  color: #fff;
+  font-family: Arial;
+}
+.button{
+  width: 90%;
+  height: 12%;
+  background: #428fb5;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+}
+.button:hover{
+  background: #fff;
+  color: #494e87;
+}
+.button a{
+  text-decoration: none;
+  color: p#1A1C40;
+  font-weight: bold;
+}
+
+
+/*==============Footer================*/
+footer{
+  background-color: #111;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
