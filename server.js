@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 //INITIALIZE APP
 const app = express()
-const port = 5000
+const PORT = process.env.PORT || 5000;
 
 //MIDDLEWARE
 app.use(express.json())
@@ -82,8 +82,8 @@ const authHeader = req.headers.authorization || req.headers.Authorization;
 
 
 // Start Server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
 
 
